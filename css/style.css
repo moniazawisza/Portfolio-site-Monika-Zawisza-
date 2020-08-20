@@ -1,0 +1,65 @@
+/*
+colors used
+Primary color: (Flame) #E4572E;
+Secondary: (Jet) #303030;
+Tertiary: (Dim Grey) #606060;
+link hover: #F4714B;
+link visited: #BC4826;
+link active: #F65627;
+*/
+body {
+  background-color: #ffffff;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+  color: #303030;
+  font-size: 16;
+}
+
+h1 {
+  font-size: 2.488em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.074em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.728em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.44em;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #E4572E;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #BC4826;
+}
+
+a:hover,
+a:focus {
+  color: #F4714B;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #F65627;
+}
