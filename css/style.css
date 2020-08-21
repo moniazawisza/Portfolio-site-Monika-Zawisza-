@@ -17,22 +17,22 @@ body {
 }
 
 h1 {
-  font-size: 2.488em;
+  font-size: 1.6em;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 2.074em;
+  font-size: 1.4em;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1.728em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.44em;
+  font-size: 1.1em;
   font-weight: 400;
 }
 
@@ -56,10 +56,40 @@ a:visited { /* visited link */
 
 a:hover,
 a:focus {
-  color: #F4714B;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  font-weight: 600;
 }
 
 a:active { /* selected link */
-  color: #F65627;
+    font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  background-color: #E4572E;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 2px solid #606060;
+}
+
+.button:hover,
+.button:active {
+  opacity: 0.9; /* Reduces the opacity of the button to 80% */
+  padding: 10.5px;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #E4572E;
+  text-transform: uppercase;
+  border: 2px solid #E4572E;
+
+}
+
+.button.contact:hover {
+  background-color: #E4572E;
+  color: white;
+  opacity: 0.9;
 }
