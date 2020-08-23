@@ -1,43 +1,51 @@
 /*
 colors used
-Primary color: (Flame) #E4572E;
+Primary color: (coral) #FF8A71;
 Secondary: (Jet) #303030;
 Tertiary: (Dim Grey) #606060;
-link hover: #F4714B;
-link visited: #BC4826;
-link active: #F65627;
+button: #F9765B
 */
 body {
   background-color: #ffffff;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.65;
   color: #303030;
-  font-size: 16;
+  font-size: 16px;
+}
+header {
+  background-color: #FFF7F5;
+  padding: 10px;
+  margin: 10px;
 }
 
 h1 {
-  font-size: 1.6em;
-  font-weight: 400;
+  font-family: 'Spartan', sans-serif;
+  font-size: 2.625em;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-family: 'Spartan', sans-serif;
+  font-size: 2.250em;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.333em;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.1em;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.190em;
   font-weight: 400;
 }
 
 h5 {
-  font-size: 1.2em;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.0em;
   font-weight: 400;
 }
 
@@ -46,12 +54,12 @@ img {
 }
 
 a {
-  color: #E4572E;
-  text-decoration: none; /* No underlining */
+  color: #FF8A71;
+  text-decoration: underline;; /* No underlining */
 }
 
 a:visited { /* visited link */
-  color: #BC4826;
+  color: #FF8A71;
 }
 
 a:hover,
@@ -65,31 +73,32 @@ a:active { /* selected link */
 
 .button {
   display: inline-block;
-  background-color: #E4572E;
-  color: white;
+  background-color: #FF8A71;
+  color: #ffffff !important;
   font-weight: 600;
-  padding: 10px;
+  text-transform: uppercase;
+  padding: 10px 15px;
   border-radius: 4px;
   border-bottom: 2px solid #606060;
+  text-decoration: none;
 }
 
 .button:hover,
 .button:active {
-  opacity: 0.9; /* Reduces the opacity of the button to 80% */
-  padding: 10.5px;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #E4572E;
+  color: #FF8A71 !important;
   text-transform: uppercase;
-  border: 2px solid #E4572E;
+  border: 2px solid #FF8A71;
 
 }
 
 .button.contact:hover {
-  background-color: #E4572E;
-  color: white;
-  opacity: 0.9;
+  background-color: #FF8A71;
+  color: #ffffff !important;
+  opacity: 0.8;
 }
