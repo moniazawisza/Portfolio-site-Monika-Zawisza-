@@ -5,6 +5,10 @@ Secondary: (Jet) #303030;
 Tertiary: (Dim Grey) #606060;
 button: #F9765B
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
@@ -12,23 +16,36 @@ body {
   line-height: 1.65;
   color: #303030;
   font-size: 16px;
+  margin: 0;
 }
+
 header {
   background-color: #FFF7F5;
-  padding: 10px;
-  margin: 10px;
+  text-align:center;
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px 0px rgba(140, 140, 140, 0.47);
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  background-color: #FFF7F5;
+  text-align: center;
 }
 
 h1 {
   font-family: 'Spartan', sans-serif;
   font-size: 2.625em;
   font-weight: 600;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Spartan', sans-serif;
   font-size: 2.250em;
   font-weight: 400;
+  text-align: center;
 }
 
 h3 {
@@ -55,7 +72,7 @@ img {
 
 a {
   color: #FF8A71;
-  text-decoration: underline;; /* No underlining */
+  text-decoration: underline; /* No underlining */
 }
 
 a:visited { /* visited link */
@@ -64,11 +81,11 @@ a:visited { /* visited link */
 
 a:hover,
 a:focus {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a:active { /* selected link */
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .button {
@@ -94,11 +111,85 @@ a:active { /* selected link */
   color: #FF8A71 !important;
   text-transform: uppercase;
   border: 2px solid #FF8A71;
-
 }
+
 
 .button.contact:hover {
   background-color: #FF8A71;
   color: #ffffff !important;
   opacity: 0.8;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 35px 0;
+}
+
+main {
+padding-top: 160px;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#hero {
+  background-color: #FFF7F5;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+  font-weight: 400;
+}
+
+.social-links > a {
+  width: 60px;
+  padding: 10px;
+  display: inline-block;
+}
+
+#contact {
+  display: inline-block;
+  width: 100%
+}
+
+#contact h2{
+  padding-top: 15px;
+  margin: 0 auto;
+}
+
+.button.contact {
+    margin: 10px auto;
 }
