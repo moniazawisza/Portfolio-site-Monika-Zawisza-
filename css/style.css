@@ -16,16 +16,14 @@ body {
   line-height: 1.65;
   color: #303030;
   font-size: 16px;
-  margin: 0;
 }
 
 header {
   background-color: #FFF7F5;
-  text-align:center;
-  padding: 10px 0;
+  text-align: center;
+  padding: 40px 0;
   box-shadow: 0px 2px 5px 0px rgba(140, 140, 140, 0.47);
   position: fixed;
-  display: inline-block;
   width: 100%;
 }
 
@@ -34,36 +32,29 @@ footer {
   text-align: center;
 }
 
+h1, h2, h3, h4, h5 { font-family: 'Spartan', sans-serif; font-weight: 400;}
+
 h1 {
-  font-family: 'Spartan', sans-serif;
-  font-size: 2.625em;
+  font-size: 2.000em;
   font-weight: 600;
   text-align: center;
 }
 
 h2 {
-  font-family: 'Spartan', sans-serif;
-  font-size: 2.250em;
-  font-weight: 400;
+  font-size: 1.714em;
   text-align: center;
 }
 
 h3 {
-  font-family: 'Spartan', sans-serif;
   font-size: 1.333em;
-  font-weight: 400;
 }
 
 h4 {
-  font-family: 'Spartan', sans-serif;
-  font-size: 1.190em;
-  font-weight: 400;
+  font-size: 1.143em;
 }
 
 h5 {
-  font-family: 'Spartan', sans-serif;
   font-size: 1.0em;
-  font-weight: 400;
 }
 
 img {
@@ -72,10 +63,10 @@ img {
 
 a {
   color: #FF8A71;
-  text-decoration: underline; /* No underlining */
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #FF8A71;
 }
 
@@ -84,8 +75,9 @@ a:focus {
   font-weight: 700;
 }
 
-a:active { /* selected link */
-    font-weight: 700;
+a:active {
+  /* selected link */
+  font-weight: 700;
 }
 
 .button {
@@ -102,7 +94,8 @@ a:active { /* selected link */
 
 .button:hover,
 .button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -112,7 +105,6 @@ a:active { /* selected link */
   text-transform: uppercase;
   border: 2px solid #FF8A71;
 }
-
 
 .button.contact:hover {
   background-color: #FF8A71;
@@ -126,15 +118,15 @@ a:active { /* selected link */
 }
 
 .row {
-  margin: 35px 0;
+  margin: 40px 0;
 }
 
 main {
-padding-top: 160px;
+  padding-top: 130px;
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 170px;
 }
 
 nav {
@@ -142,16 +134,16 @@ nav {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   text-decoration: none;
@@ -160,8 +152,7 @@ nav > ul > li > a {
 
 #hero {
   background-color: #FFF7F5;
-  padding: 20px 0;
-  display: inline-block;
+  padding: 40px 0;
   width: 100%;
 }
 
@@ -174,7 +165,7 @@ nav > ul > li > a {
   font-weight: 400;
 }
 
-.social-links > a {
+.social-links>a {
   width: 60px;
   padding: 10px;
   display: inline-block;
@@ -185,11 +176,99 @@ nav > ul > li > a {
   width: 100%
 }
 
-#contact h2{
+#contact h2 {
   padding-top: 15px;
   margin: 0 auto;
 }
 
 .button.contact {
-    margin: 10px auto;
+  margin: 10px auto;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 12px 10px 8px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  .logo {
+    max-width: 170px;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+#about-page h2 {
+  margin-top: 40px ;
+}
+
+#about-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+#work h3 {
+  margin-top: 0;
 }
