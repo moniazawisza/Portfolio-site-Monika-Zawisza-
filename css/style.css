@@ -42,11 +42,14 @@ h1 {
   font-size: 2.000em;
   font-weight: 600;
   text-align: center;
+  line-height: 1.6em;
+  margin: 0;
 }
 
 h2 {
   font-size: 1.714em;
   text-align: center;
+  margin: 0;
 }
 
 h3 {
@@ -63,7 +66,6 @@ h5 {
 
 img, svg {
   width: 100%;
-  padding-bottom: 15px;
 }
 
 a {
@@ -119,16 +121,23 @@ a:active {
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
-#work .row {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.section {
+  padding: 25px 0;
+}
+
+.section:last-child {
+  padding-bottom: 0;
+}
+
+.row {
+  padding: 25px 0;
 }
 
 main {
-  padding-top: 150px;
+  padding-top: 116px;
 }
 
 .logo {
@@ -159,7 +168,7 @@ nav>ul>li>a {
 
 #hero {
   background-color: #FFF7F5;
-  padding: 40px 0;
+
   width: 100%;
 }
 
@@ -198,8 +207,7 @@ nav>ul>li>a {
 }
 
 #about-page ul {
-  list-style: none;
-  padding: 0;
+  padding-left: 20px;
 }
 
 #work h3 {
@@ -208,6 +216,18 @@ nav>ul>li>a {
 
 .center {
   text-align: center;
+}
+
+.column {
+  padding: 15px 0;
+}
+
+#work .row {
+  border-bottom: 1px solid #FF8A71;
+  padding: 35px 0;
+}
+#work .row:last-child {
+  border-bottom: none;
 }
 
 @keyframes color-change {
@@ -262,7 +282,6 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 12px 10px 8px;
   }
 
   nav {
@@ -276,11 +295,27 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 100px;
+    padding-top: 90px;
+  }
+
+  .col-md-12 {
+    width: 100%;
   }
 
   .col-md-6 {
     width: 50%;
+    padding: 0 10px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: inherit 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
 
@@ -300,20 +335,27 @@ Large devices (1024px or larger)
     width: 40%;
   }
 
+  .col-lg-12 {
+    width: 100%;
+  }
+
   .container {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0 auto;
   }
-}
 
-[class*="col-"] {
-  float: left;
-  padding: 0 10px;
-}
+  #story img {
+    max-width: 70%;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  [class*="col-"] {
+    float: left;
+    padding: 0 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
