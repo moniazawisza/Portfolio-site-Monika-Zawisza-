@@ -309,7 +309,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: inherit 10px;
+    padding: 0 10px;
   }
 
   .row::after {
@@ -341,7 +341,7 @@ Large devices (1024px or larger)
 
   .container {
     max-width: 1200px;
-    margin-left: 0 auto;
+    margin: 0 auto;
   }
 
   #story img {
@@ -349,13 +349,7 @@ Large devices (1024px or larger)
   }
 
   [class*="col-"] {
-    float: left;
     padding: 0 20px;
   }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 }
