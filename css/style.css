@@ -222,6 +222,10 @@ nav>ul>li>a {
   padding: 15px 0;
 }
 
+.location {
+  font-weight: 700;
+}
+
 #work .row {
   border-bottom: 1px solid #FF8A71;
   padding: 35px 0;
