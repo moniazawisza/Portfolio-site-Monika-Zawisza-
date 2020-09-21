@@ -179,6 +179,7 @@ nav>ul>li>a {
 .navtoggle.responsive nav {
   padding: 17px 0 0;
 }
+
 .navtoggle.responsive li  {
   display: block;
   text-align: right;
@@ -332,6 +333,15 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
   display: none;
 }
+
+.navtoggle.responsive nav {
+  padding: 0;
+}
+
+.navtoggle.responsive li  {
+padding: 0;
+}  
+
 
   .logo {
     max-width: 170px;
