@@ -1,6 +1,6 @@
 /*
 colors used
-Primary color: (coral) #FF8A71;
+Primary color: (coral) #E7735A;
 Secondary: (Jet) #303030;
 Tertiary: (Dim Grey) #606060;
 button: #F9765B
@@ -68,12 +68,12 @@ img, svg {
 }
 
 a {
-  color: #FF8A71;
+  color: #E7735A;
 }
 
 a:visited {
   /* visited link */
-  color: #FF8A71;
+  color: #E7735A;
 }
 
 a:hover,
@@ -88,7 +88,7 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #FF8A71;
+  background-color: #E7735A;
   color: #ffffff !important;
   font-weight: 600;
   text-transform: uppercase;
@@ -107,13 +107,13 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #FF8A71 !important;
+  color: #E7735A !important;
   text-transform: uppercase;
-  border: 2px solid #FF8A71;
+  border: 2px solid #E7735A;
 }
 
 .button.contact:hover {
-  background-color: #FF8A71;
+  background-color: #E7735A;
   color: #ffffff !important;
   opacity: 0.8;
 }
@@ -251,7 +251,7 @@ nav>ul>li>a {
 }
 
 #work .row {
-  border-bottom: 1px solid #FF8A71;
+  border-bottom: 1px solid #E7735A;
   padding: 35px 0;
 }
 #work .row:last-child {
@@ -340,7 +340,7 @@ Medium devices (640px and larger)
 
 .navtoggle.responsive li  {
 padding: 0;
-}  
+}
 
 
   .logo {
