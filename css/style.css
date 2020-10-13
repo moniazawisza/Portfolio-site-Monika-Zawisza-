@@ -51,6 +51,10 @@ h2 {
   margin: 0;
 }
 
+#ally main h2 {
+  color: #E7735A;
+}
+
 h3 {
   font-size: 1.333em;
 }
@@ -149,8 +153,11 @@ nav>ul {
   margin: 0;
 }
 
+nav>ul>li {
+  margin: 0 15px;
+}
+
 nav>ul>li>a {
-  padding: 0 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 400;
@@ -182,7 +189,7 @@ nav>ul>li>a {
 
 .navtoggle.responsive li {
   display: block;
-  text-align: right;
+  margin-left: 0;
   padding: 8px 0;
 }
 
@@ -193,11 +200,11 @@ nav>ul>li>a {
 #hero {
   background-color: #FFF7F5;
   width: 100%;
-}
-
-#hero {
   text-align: center;
 }
+ #hero {
+   padding: 40px 0;
+ }
 
 #hero span {
   display: block;
@@ -247,6 +254,7 @@ nav>ul>li>a {
 
 .location {
   font-weight: 700;
+  border-bottom: 2px solid #FF8A71;
 }
 
 #work .row {
@@ -350,6 +358,7 @@ Medium devices (640px and larger)
     padding-top: 90px;
   }
 
+
   .col-md-12 {
     width: 100%;
   }
@@ -392,8 +401,21 @@ Large devices (1024px or larger)
   }
 
   .container {
+    padding: 0 100px;
+  }
+
+  #ally main{
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+
+  .container {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  #hero {
+    padding: 70px 0;
   }
 
   #story img {
